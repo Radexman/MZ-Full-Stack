@@ -1,0 +1,29 @@
+body {
+    background-color: gray;
+    font-family: Verdana;
+    font-size: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    color: red;
+}
+
+/* Unvisited link */
+
+a:link {
+    color: yellow;
+}
+
+/* Visited link */
+
+a:visited {
+    color: yellow;
+}
+
+/* Hovering on link */
+
+a:hover {
+    color: red;
+}
