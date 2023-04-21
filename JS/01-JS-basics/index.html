@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JS Basics</title>
+
+		<script>
+			const displayTimer = () => {
+				const date = new Date();
+
+				let hours = date.getHours();
+				hours = hours < 10 ? `0${hours}` : hours;
+
+				let minutes = date.getMinutes();
+				minutes = minutes < 10 ? `0${minutes}` : minutes;
+
+				let seconds = date.getSeconds();
+				seconds = seconds < 10 ? `0${seconds}` : seconds;
+
+				const currentTime = `${hours}:${minutes}:${seconds}`;
+
+				document.querySelector('#timer').textContent = currentTime;
+			};
+
+			setInterval(displayTimer, 1000);
+		</script>
+	</head>
+	<body>
+		<div id="timer"></div>
+	</body>
+</html>
