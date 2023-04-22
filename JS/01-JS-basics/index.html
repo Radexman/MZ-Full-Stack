@@ -6,17 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>JS Basics</title>
 
-		<script>
+		<script type="text/javascript">
 			const displayTimer = () => {
-				const date = new Date();
+				const today = new Date();
 
-				let hours = date.getHours();
+				let hours = today.getHours();
 				hours = hours < 10 ? `0${hours}` : hours;
 
-				let minutes = date.getMinutes();
+				let minutes = today.getMinutes();
 				minutes = minutes < 10 ? `0${minutes}` : minutes;
 
-				let seconds = date.getSeconds();
+				let seconds = today.getSeconds();
 				seconds = seconds < 10 ? `0${seconds}` : seconds;
 
 				const currentTime = `${hours}:${minutes}:${seconds}`;
@@ -26,8 +26,26 @@
 
 			setInterval(displayTimer, 1000);
 		</script>
+
+		<style>
+			#timer {
+				font-size: 2rem;
+			}
+
+			.day {
+				background-color: #ccc;
+				color: #000;
+			}
+
+			.night {
+				background-color: #333;
+				color: #fff;
+			}
+		</style>
 	</head>
 	<body>
-		<div id="timer"></div>
+		<main>
+			<div id="timer"></div>
+		</main>
 	</body>
 </html>
