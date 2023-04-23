@@ -1,1 +1,31 @@
 # **SQL Basics**
+
+Data base is a logically structured collection of data as tables with realtions between them.
+
+Data bases examples:
+
+-   Phone book
+-   Library catalogue
+-   Facebook users
+
+Data base is made of tables and tables are made of rows and columns.
+
+Record (tuple) - is a single row in table, it contains a set of fields. Just like in Excel. Record doesn't need to contain full row.
+
+Field (attribute) - part of the table that contains single piece of data.
+
+Primary key - also known as main key, it is one or multiple fields which contents identifies for each recors in the table. This feature is called key unqueness.
+
+Redundation - unnecessary case of repeating already existing data or task.
+
+## **PHPMyAdmin**
+
+DBMS - Database Managemnt System
+
+A_I - Automatic increment, increments int by 1 each time.
+
+## **SQL**
+
+SQL - Structured Query Language.
+
+Query - inquiery for database.
