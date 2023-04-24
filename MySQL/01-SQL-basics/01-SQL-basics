@@ -29,3 +29,51 @@ A_I - Automatic increment, increments int by 1 each time.
 SQL - Structured Query Language.
 
 Query - inquiery for database.
+
+Types of queries
+
+-   inserting
+-   searching
+-   changing
+-   deleting
+-   changing the structure of table or database
+
+Logical operators in SQL
+
+AND - when both conditions are true.
+OR - when at least one condition is true.
+
+In MySQL we use relational data bases. In this model we divide data into tables and define fields which are called keys. Next we define relations between tables in logical order.
+
+Relation - logical connection occuring between tablse realised by krimary key and foreign key or special connecting table. Each relation is described by type.
+
+Relation types:
+
+-   one-to-one
+-   one-to-many
+-   many-to-many
+
+Data Types - in each column in the table we store only one data type.
+
+Query in SQL:
+
+```sql
+SELECT * FROM pytania WHERE id = 15
+```
+
+-   SELECT - choose
+-   '\*'- all columns
+-   FROM - from table
+-   pytania - named
+-   WHERE - where
+-   id = 15 - this condition occurs
+
+### **Sorting**
+
+Sorting is the process of ordering records by some kind of criteria. Criteria is name or names of fields. For example sorting can be ascending or descending.
+
+Sorting in SQL:
+
+```sql
+SELECT * FROM pytania ORDER BY tresc ASC
+```
