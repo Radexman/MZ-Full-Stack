@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+html {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     display: grid;
@@ -15,11 +20,14 @@ body {
         "foot foot foot foot";
     grid-template-columns: 150px 1fr 1fr 150px;
     grid-template-rows: 75px 1fr 50px;
+    text-align: center;
 }
 
 .header {
     grid-area: head;
-    outline: 1px solid #000;
+    background-color: #0e0d0d;
+    color: #f1e9e9;
+    padding-top: .5em;
 }
 
 .navbar {
