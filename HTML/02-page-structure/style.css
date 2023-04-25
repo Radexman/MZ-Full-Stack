@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "head head head head"
+        "nav main main aside"
+        "foot foot foot foot";
+    grid-template-columns: 150px 1fr 1fr 150px;
+    grid-template-rows: 75px 1fr 50px;
+}
+
+.header {
+    grid-area: head;
+    outline: 1px solid #000;
+}
+
+.navbar {
+    grid-area: nav;
+    outline: 1px solid #000;
+}
+
+.main {
+    grid-area: main;
+    outline: 1px solid #000;
+}
+
+.aside {
+    grid-area: aside;
+    outline: 1px solid #000;
+}
+
+.footer {
+    grid-area: foot;
+    outline: 1px solid #000;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        grid-template-areas:
+            "head head head head"
+            "nav nav nav nav"
+            "main main main main"
+            "aside aside aside aside"
+            "foot foot foot foot";
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 75px 50px 1fr 75px 50px;
+    }
+}
