@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-size: clamp(.9rem, 1.5vw, 2rem);
     scroll-behavior: smooth;
 }
 
@@ -18,7 +18,7 @@ body {
         "head head head head"
         "nav main main aside"
         "foot foot foot foot";
-    grid-template-columns: 150px 1fr 1fr 150px;
+    grid-template-columns: 150px 1fr 1fr 160px;
     grid-template-rows: 75px 1fr 50px;
     text-align: center;
 }
@@ -27,12 +27,43 @@ body {
     grid-area: head;
     background-color: #0e0d0d;
     color: #f1e9e9;
-    padding-top: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: .5em;
 }
 
 .navbar {
     grid-area: nav;
-    outline: 1px solid #000;
+    box-shadow: 0px 3px 5px #333;
+    position: relative;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+    position: sticky;
+    top: 0;
+    border-right: 1px solid #000;
+}
+
+.nav-link {
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    transition: .2s ease-in;
+}
+
+.nav-link:hover {
+    background-color: #222;
+}
+
+.nav-link:active {
+    background-color: #bba1a1;
+    color: #000;
 }
 
 .main {
@@ -43,6 +74,9 @@ body {
 .aside {
     grid-area: aside;
     outline: 1px solid #000;
+    background-image: url(./codecademy-ad.webp);
+    background-position: center;
+    background-size: contain;
 }
 
 .footer {
@@ -61,5 +95,20 @@ body {
 
         grid-template-columns: 1fr;
         grid-template-rows: 75px 50px 1fr 75px 50px;
+    }
+
+    .nav-links {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        height: 50px;
+    }
+
+    .nav-link {
+        flex-grow: 1;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid #000;
     }
 }
