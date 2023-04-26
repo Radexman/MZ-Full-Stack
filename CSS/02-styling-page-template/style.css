@@ -148,13 +148,13 @@ a:active {
 }
 
 .logo {
-    border-right: 2px dotted #ffffff;
     max-width: 150px;
     display: block;
 }
 
 h2 {
     margin-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .main {
@@ -172,29 +172,35 @@ h2 {
     display: flex;
     flex-flow: column nowrap;
     list-style-type: none;
+    text-align: center;
+    padding: 5px 6px;
 }
 
 .nav-link-aside {
-    padding: 5px 3px;
+    padding: 10px 3px;
     color: #000000;
+    border-bottom: 2px dotted #016401;
+}
+
+.nav-link-aside:nth-child(1) {
+    border-top: 2px dotted #016401;
 }
 
 .nav-link-aside:hover {
-    color: #ffffff;
-}
-
-.nav-link-aside:active {
-    color: #000000;
+    background-color: #fa4913;
 }
 
 .article {
+    padding-top: 10px;
     padding-inline: 20px;
     text-align: justify;
     background-color: #ffffff;
 }
 
 .footer {
-
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 750px) {
