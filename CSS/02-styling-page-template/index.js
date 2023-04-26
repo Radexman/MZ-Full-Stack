@@ -9,8 +9,6 @@ const toggleMenu = () => {
 	document.querySelector('.bar:nth-child(3)').classList.toggle('bar-active-three');
 };
 
-hamburgerMenu.addEventListener('click', toggleMenu);
-
 navlinks.forEach((link) => {
 	link.addEventListener('click', () => {
 		document.querySelector('.navlinks-top').classList.remove('navbar-top-active');
@@ -20,3 +18,13 @@ navlinks.forEach((link) => {
 		document.querySelector('.bar:nth-child(3)').classList.remove('bar-active-three');
 	});
 });
+
+hamburgerMenu.addEventListener('click', toggleMenu);
+
+const displayYear = () => {
+	const date = new Date();
+	const currentYear = date.getFullYear();
+	document.querySelector('.year').appendChild(document.createTextNode(currentYear));
+};
+
+displayYear();

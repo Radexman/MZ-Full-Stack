@@ -15,9 +15,19 @@ html {
 
 body {
     min-height: 100vh;
-    background-color: #9e9d9d;
+    background-color: #404040;
     padding: .5em 1.5em;
     position: relative;
+}
+
+p {
+    margin-block: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: .3s ease-in;
 }
 
 .header {
@@ -65,13 +75,6 @@ body {
     transition: .3s ease-in;
 }
 
-.bar-active-two {
-    transform: translateY(9px) rotate(45deg);
-}
-
-.bar-active-three {
-    transform: translateY(-12px) rotate(-45deg);
-}
 
 .bar:nth-child(3) {
     width: 100%;
@@ -92,6 +95,14 @@ body {
     background-color: #303030;
 }
 
+.bar-active-two {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.bar-active-three {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
 .navlinks-active {
     transform: translateY(-500px);
 }
@@ -100,7 +111,6 @@ body {
 .navlinks-top-navlink {
     flex-grow: 1;
     text-align: center;
-    text-decoration: none;
     color: #ffffff;
     padding-block: 15px;
     transition: .2s ease-in;
@@ -114,30 +124,80 @@ body {
 }
 
 a:hover {
-    background-color: #555555;
+    background-color: #131313;
+}
+
+a:active {
+    background-color: #dddddd;
+    color: #272727;
 }
 
 .navbar-top-active {
     transform: translateY(395px);
 }
 
-.main {
+.topbar {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    background-color: #00795a;
+    color: #ffffff;
+    padding: 20px;
+    margin-block: 30px;
+    font-size: 1.1rem;
+}
 
+.logo {
+    border-right: 2px dotted #ffffff;
+    max-width: 150px;
+    display: block;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 }
 
 .aside {
+    font-size: 1.1rem;
+    border-right: 2px dotted #ffffff;
+    background-color: #979797;
+}
 
+.navlinks-aside {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style-type: none;
+}
+
+.nav-link-aside {
+    padding: 5px 3px;
+    color: #000000;
+}
+
+.nav-link-aside:hover {
+    color: #ffffff;
+}
+
+.nav-link-aside:active {
+    color: #000000;
 }
 
 .article {
-
+    padding-inline: 20px;
+    text-align: justify;
+    background-color: #ffffff;
 }
 
 .footer {
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     .navbar {
         position: absolute;
         width: 91vw;
@@ -156,6 +216,7 @@ a:hover {
     }
 
     .navlinks-top-navlink:nth-child(1) {
+        border-left: none;
         border-top: 2px dotted #00ad00;
     }
 
