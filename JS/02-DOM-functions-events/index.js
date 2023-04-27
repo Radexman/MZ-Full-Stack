@@ -1,34 +1,41 @@
-// Inputs accept integer and first has to be bigger than second
-// On click show number range ascending
-
+// All DOM elemen ts
 const form = document.getElementById('form');
 const numberOneInput = document.getElementById('number-one');
 const numberTwoInput = document.getElementById('number-two');
 const output = document.getElementById('output');
 
+// Submit event handles
 const displayRange = (e) => {
 	e.preventDefault();
 
-	const numOne = Number(numberOneInput.value);
-	const numTwo = Number(numberTwoInput.value);
+	const numOne = Math.round(Number(numberOneInput.value));
+	const numTwo = Math.round(Number(numberTwoInput.value));
 	let msg;
 
+	// Checking conditions
 	if (!numberOneInput.value || !numberTwoInput.value) {
 		msg = 'Please enter numbers.';
 	} else if (numOne > numTwo) {
 		msg = 'First number has to be smaller than second.';
 	} else if (numOne < numTwo) {
-		const range = [];
-		let i = numOne;
+		msg = generateRange(numOne, numTwo);
+	} else if (!Number(numOne) || !Number(numTwo)) {
+		msg = 'Please enter two numbers.';
+	}
+	output.textContent = msg;
+};
 
-		while (i < numTwo) {
-			range.push(i);
-			i++;
-		}
-		msg = range;
+// Helper function for range of numbers
+const generateRange = (numOne, numTwo) => {
+	const numbersRange = [];
+	let i = numOne;
+
+	while (i < numTwo) {
+		numbersRange.push(i);
+		i++;
 	}
 
-	output.textContent = msg;
+	return numbersRange;
 };
 
 form.addEventListener('submit', displayRange);
