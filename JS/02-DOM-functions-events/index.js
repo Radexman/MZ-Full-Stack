@@ -1,24 +1,34 @@
+// Inputs accept integer and first has to be bigger than second
+// On click show number range ascending
+
 const form = document.getElementById('form');
-const numberInput = document.getElementById('number');
+const numberOneInput = document.getElementById('number-one');
+const numberTwoInput = document.getElementById('number-two');
 const output = document.getElementById('output');
 
-const checkValue = (e) => {
+const displayRange = (e) => {
 	e.preventDefault();
 
-	const number = Number(numberInput.value);
+	const numOne = Number(numberOneInput.value);
+	const numTwo = Number(numberTwoInput.value);
 	let msg;
 
-	if (number === 0) {
-		msg = 'Number is 0.';
-	} else if (number > 0) {
-		msg = 'Number is positive.';
-	} else if (number < 0) {
-		msg = 'Number is neative.';
-	} else if (number !== isNaN) {
-		msg = 'Please enter a number.';
+	if (!numberOneInput.value || !numberTwoInput.value) {
+		msg = 'Please enter numbers.';
+	} else if (numOne > numTwo) {
+		msg = 'First number has to be smaller than second.';
+	} else if (numOne < numTwo) {
+		const range = [];
+		let i = numOne;
+
+		while (i < numTwo) {
+			range.push(i);
+			i++;
+		}
+		msg = range;
 	}
 
 	output.textContent = msg;
 };
 
-form.addEventListener('submit', checkValue);
+form.addEventListener('submit', displayRange);

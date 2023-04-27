@@ -7,12 +7,17 @@
 		<title>DOM-Functions-Events</title>
 	</head>
 	<body>
+		<p>Type in two numbers, first has to be smaller than second.</p>
 		<form id="form">
 			<div class="form-control">
-				<label for="number">Please enter number:</label>
-				<input type="text" id="number" />
-				<button type="submit">Check</button>
+				<label for="number-one">Number One:</label>
+				<input type="text" id="number-one" />
 			</div>
+			<div class="form-control">
+				<label for="number-two">Number Two:</label>
+				<input type="text" id="number-two" />
+			</div>
+			<button type="submit">Dispaly range</button>
 		</form>
 		<p id="output"></p>
 		<script src="index.js"></script>
