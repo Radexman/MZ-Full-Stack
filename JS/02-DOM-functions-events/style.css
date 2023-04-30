@@ -30,4 +30,5 @@ main {
     background-color: black;
     width: 70vw;
     height: 60vh;
+    border: none;
 }
