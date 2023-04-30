@@ -28,7 +28,21 @@ main {
     background-repeat: no-repeat;
     border-radius: 5px;
     background-color: black;
-    width: 70vw;
+    width: 60vw;
     height: 60vh;
     border: none;
+    transition: .5s ease-in;
+}
+
+form {
+    margin: 20px auto;
+}
+
+input[type=radio] {
+    width: 18px;
+    aspect-ratio: 1 / 1;
+}
+
+.fade-out {
+    transform: translateX(-200%);
 }
