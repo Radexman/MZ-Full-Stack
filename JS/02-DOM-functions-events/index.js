@@ -1,4 +1,4 @@
-// All DOM elemen ts
+// All DOM elements
 const form = document.getElementById('form');
 const numberOneInput = document.getElementById('number-one');
 const numberTwoInput = document.getElementById('number-two');
