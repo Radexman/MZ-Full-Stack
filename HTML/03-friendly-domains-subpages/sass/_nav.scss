@@ -1,0 +1,6 @@
+// ========== Navbar Styling ========== //
+
+.nav {
+    @include test-line;
+    grid-area: nav;
+}

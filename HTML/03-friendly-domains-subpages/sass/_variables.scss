@@ -1,1 +1,15 @@
-// SASS Variables
+// ========== SASS Variables ========== //
+
+// Colors
+$clr-primary: #303030;
+
+// Typography
+$txt-clr: #ffffff;
+
+// Borders
+
+@mixin test-line {
+    outline: 1px solid #ffffff;
+    padding: 1em;
+    margin: .5em;
+}

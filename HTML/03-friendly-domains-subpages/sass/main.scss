@@ -1,7 +1,13 @@
-// Partial imports, client stylesheet resets & initial general styling
+//========== Partial imports, client stylesheet resets & initial general styling ========== //
 
 @import './variables';
 @import './components';
+@import './nav';
+@import './general';
+@import './footer';
+@import './cnt-box-one';
+@import './cnt-box-two';
+@import './media-querries';
 
 *,
 *::before,
@@ -12,8 +18,10 @@
 }
 
 body {
-    background-color: #333;
+    background-color: $clr-primary;
+    color: $txt-clr;
     min-height: 100vh;
+    text-align: center;
 }
 
 img,
@@ -29,4 +37,19 @@ textarea,
 button,
 select {
     font: inherit;
+}
+
+// Page layout
+
+#first-grid-wrapper {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-areas: 
+        "nav nav"
+        "main main"
+        "foot foot"
+    ;
+    grid-template-rows: 100px 450px 75px;
+    grid-template-columns: 1fr 1fr;
 }

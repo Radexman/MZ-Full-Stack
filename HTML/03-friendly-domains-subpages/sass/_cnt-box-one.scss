@@ -1,0 +1,13 @@
+// ========== First Box Styling ========== //
+
+#second-grid-wrapper {
+    @include test-line;
+
+    .tile-one-column {
+        @include test-line;
+    }
+
+    .tile-two-column {
+        @include test-line;
+    }
+}
