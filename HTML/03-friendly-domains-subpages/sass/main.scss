@@ -23,6 +23,11 @@ body {
     text-align: center;
 }
 
+html {
+    scroll-behavior: smooth;
+    font-size: clamp(1rem, 1vw, 3rem);
+}
+
 img,
 picture,
 svg,

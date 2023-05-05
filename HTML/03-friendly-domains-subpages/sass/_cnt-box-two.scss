@@ -12,7 +12,19 @@
     .tile-one-column {
         @include test-line;
         grid-area: tile-one;
-        padding-bottom: 80px;
+    }
+
+    .tile-two-column:nth-child(1) {
+        grid-area: tile-two;
+    }
+    .tile-two-column:nth-child(2) {
+        grid-area: tile-three;
+    }
+    .tile-two-column:nth-child(3) {
+        grid-area: tile-four;
+    }
+    .tile-two-column:nth-child(4) {
+        grid-area: tile-five;
     }
 
     .tile-two-column {

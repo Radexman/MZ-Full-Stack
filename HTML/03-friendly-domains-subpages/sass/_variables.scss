@@ -9,7 +9,8 @@ $txt-clr: #ffffff;
 // Borders
 
 @mixin test-line {
-    outline: 1px solid #ffffff;
+    outline: 2px solid #ffffff;
     padding: 1em;
     margin: .5em;
+    border-radius: 1px;
 }
