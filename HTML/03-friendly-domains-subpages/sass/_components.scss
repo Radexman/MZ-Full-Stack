@@ -1,1 +1,8 @@
 // ========== Mixin Components ========== //
+
+@mixin test-line {
+    outline: 2px solid #ffffff;
+    padding: 1em;
+    margin: .5em;
+    border-radius: 1px;
+}

@@ -3,4 +3,11 @@
 .nav {
     @include test-line;
     grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__h2 {
+        font-family: $font-secondary;
+    }
 }

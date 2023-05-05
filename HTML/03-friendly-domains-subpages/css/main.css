@@ -1,9 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 .nav {
   outline: 2px solid #ffffff;
   padding: 1em;
   margin: 0.5em;
   border-radius: 1px;
   grid-area: nav;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav__h2 {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .main {
@@ -130,7 +138,8 @@ body {
 
 html {
   scroll-behavior: smooth;
-  font-size: clamp(1rem, 1vw, 3rem);
+  font-size: clamp(1rem, 1.5vw, 3rem);
+  font-family: "Lato", sans-serif;
 }
 
 img,
@@ -149,8 +158,8 @@ select {
 }
 
 #first-grid-wrapper {
-  min-height: 100vh;
   display: grid;
+  min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
   grid-template-areas: "nav nav" "main main" "foot foot";

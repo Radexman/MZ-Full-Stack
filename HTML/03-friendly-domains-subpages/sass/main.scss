@@ -1,4 +1,7 @@
-//========== Partial imports, client stylesheet resets & initial general styling ========== //
+//========== Partial imports, font imports, client stylesheet resets & initial general styling ========== //
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 
 @import './variables';
 @import './components';
@@ -25,7 +28,8 @@ body {
 
 html {
     scroll-behavior: smooth;
-    font-size: clamp(1rem, 1vw, 3rem);
+    font-size: clamp(1rem, 1.5vw, 3rem);
+    font-family: $font-primary;
 }
 
 img,
@@ -46,8 +50,8 @@ select {
 // Page layout
 
 #first-grid-wrapper {
-    min-height: 100vh;
     display: grid;
+    min-height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
     grid-template-areas: 

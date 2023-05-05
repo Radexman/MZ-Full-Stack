@@ -5,12 +5,6 @@ $clr-primary: #303030;
 
 // Typography
 $txt-clr: #ffffff;
+$font-primary: 'Lato', sans-serif;
+$font-secondary: 'Josefin Sans', sans-serif;
 
-// Borders
-
-@mixin test-line {
-    outline: 2px solid #ffffff;
-    padding: 1em;
-    margin: .5em;
-    border-radius: 1px;
-}
