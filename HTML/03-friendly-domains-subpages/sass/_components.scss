@@ -1,8 +1,35 @@
 // ========== Mixin Components ========== //
 
+// Testing box
+
 @mixin test-line {
     outline: 2px solid #ffffff;
     padding: 1em;
     margin: .5em;
     border-radius: 1px;
+}
+
+// Customization for tiles
+
+@mixin tile-small {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin tile-one {
+    background-color: #3095d3;
+}
+
+@mixin tile-two {
+    background-color: #666666;
+}
+
+@mixin tile-three {
+    background-color: #93c748;
+}
+
+@mixin tile-four {
+    background-color: #ee5232;
 }

@@ -1,7 +1,6 @@
 // ========== Navbar Styling ========== //
 
 .nav {
-    @include test-line;
     grid-area: nav;
     display: grid;
     grid-template-columns: repeat(2, 1fr);

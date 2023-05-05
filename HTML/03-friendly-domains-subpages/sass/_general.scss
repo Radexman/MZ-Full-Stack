@@ -1,7 +1,6 @@
 // ========== Main page section styling ========== //
 
 .main {
-    @include test-line;
     grid-area: main;
     min-width: 0;
     display: grid;

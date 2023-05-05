@@ -1,36 +1,43 @@
 // ========== First Box Styling ========== //
 
 #second-grid-wrapper {
-    @include test-line;
+    // outline: 1px solid #fff;
     display: grid;
+    padding: 50px;
     grid-template-areas: 
         "tile-one tile-two"
         "tile-three tile-four"
         "tile-five tile-five"
     ;
 
-    .tile-one-column {
-        @include test-line;
-    }
-
     .tile-one-column:nth-child(1) {
+        @include tile-one;
+        @include tile-small;
         grid-area: tile-one;
     }
+
     .tile-one-column:nth-child(2) {
+        @include tile-one;
+        @include tile-small;
         grid-area: tile-two;
     }
+
     .tile-one-column:nth-child(3) {
+        @include tile-small;
+        @include tile-two;
         grid-area: tile-three;
+        
     }
+    
     .tile-one-column:nth-child(4) {
+        @include tile-small;
+        @include tile-three;
         grid-area: tile-four;
     }
 
     .tile-two-column:nth-child(5) {
+        @include tile-small;
+        @include tile-four;
         grid-area: tile-five;
-    }
-
-    .tile-two-column {
-        @include test-line;
     }
 }

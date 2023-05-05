@@ -1,7 +1,8 @@
 // ========== Second Box Styling ========== //
 
 #third-grid-wrapper {
-    @include test-line;
+    // outline: 1px solid #fff;
+    padding: 50px;
     display: grid;
     grid-template-areas: 
         "tile-one tile-one tile-one tile-one"
@@ -10,7 +11,6 @@
     ;
 
     .tile-one-column {
-        @include test-line;
         grid-area: tile-one;
     }
 
@@ -25,9 +25,5 @@
     }
     .tile-two-column:nth-child(4) {
         grid-area: tile-five;
-    }
-
-    .tile-two-column {
-        @include test-line;
     }
 }
