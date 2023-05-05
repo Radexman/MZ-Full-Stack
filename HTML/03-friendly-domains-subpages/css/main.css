@@ -6,12 +6,16 @@
   margin: 0.5em;
   border-radius: 1px;
   grid-area: nav;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
 }
 .nav__h2 {
   font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+}
+.nav__timer {
+  font-size: 1.4rem;
 }
 
 .main {
@@ -105,6 +109,9 @@
 
 @media screen and (max-width: 800px) {
   .main {
+    grid-template-columns: 1fr;
+  }
+  .nav {
     grid-template-columns: 1fr;
   }
 }

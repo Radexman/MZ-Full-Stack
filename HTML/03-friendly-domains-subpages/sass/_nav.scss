@@ -3,11 +3,16 @@
 .nav {
     @include test-line;
     grid-area: nav;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
 
     &__h2 {
         font-family: $font-secondary;
+        font-size: 2rem;
+    }
+
+    &__timer {
+        font-size: 1.4rem;
     }
 }

@@ -4,6 +4,10 @@
     .main {
         grid-template-columns: 1fr;
     }
+
+    .nav {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 450px) {
