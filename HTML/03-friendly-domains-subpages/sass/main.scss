@@ -20,7 +20,6 @@
 body {
     background-color: $clr-primary;
     color: $txt-clr;
-    min-height: 100vh;
     text-align: center;
 }
 
@@ -42,6 +41,7 @@ select {
 // Page layout
 
 #first-grid-wrapper {
+    min-height: 100vh;
     display: grid;
     max-width: 1200px;
     margin: 0 auto;
@@ -50,6 +50,6 @@ select {
         "main main"
         "foot foot"
     ;
-    grid-template-rows: 100px 450px 75px;
+    grid-template-rows: 100px 1fr 75px;
     grid-template-columns: 1fr 1fr;
 }

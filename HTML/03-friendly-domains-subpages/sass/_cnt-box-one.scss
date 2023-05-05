@@ -2,9 +2,32 @@
 
 #second-grid-wrapper {
     @include test-line;
+    display: grid;
+    grid-template-areas: 
+        "tile-one tile-two"
+        "tile-three tile-four"
+        "tile-five tile-five"
+    ;
 
     .tile-one-column {
         @include test-line;
+    }
+
+    .tile-one-column:nth-child(1) {
+        grid-area: tile-one;
+    }
+    .tile-one-column:nth-child(2) {
+        grid-area: tile-two;
+    }
+    .tile-one-column:nth-child(3) {
+        grid-area: tile-three;
+    }
+    .tile-one-column:nth-child(4) {
+        grid-area: tile-four;
+    }
+
+    .tile-two-column:nth-child(5) {
+        grid-area: tile-five;
     }
 
     .tile-two-column {

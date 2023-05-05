@@ -2,4 +2,20 @@
 
 #third-grid-wrapper {
     @include test-line;
+    display: grid;
+    grid-template-areas: 
+        "tile-one tile-one tile-one tile-one"
+        "tile-one tile-one tile-one tile-one"
+        "tile-two tile-three tile-four tile-five"
+    ;
+
+    .tile-one-column {
+        @include test-line;
+        grid-area: tile-one;
+        padding-bottom: 80px;
+    }
+
+    .tile-two-column {
+        @include test-line;
+    }
 }
