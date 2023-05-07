@@ -13,6 +13,7 @@
         @include tile-small;
         @include tile-two;
         grid-area: tile-one;
+        padding-inline: 5px;
     }
 
     .tile-two-column {

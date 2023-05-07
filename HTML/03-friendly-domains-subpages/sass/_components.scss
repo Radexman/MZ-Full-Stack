@@ -14,8 +14,11 @@
 @mixin tile-small {
     margin: 5px;
     display: flex;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    font-size: 1.1rem;
+    gap: .3em;
 }
 
 @mixin tile-one {

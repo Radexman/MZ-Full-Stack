@@ -38,5 +38,7 @@
         @include tile-small;
         @include tile-four;
         grid-area: tile-five;
+        font-size: 1.3rem;
+        padding-inline: 5px;
     }
 }
