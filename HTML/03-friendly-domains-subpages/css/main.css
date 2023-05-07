@@ -109,6 +109,16 @@
   font-size: 1.3rem;
   padding-inline: 5px;
 }
+#second-grid-wrapper .page-link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  gap: 0.3em;
+}
 
 #third-grid-wrapper {
   padding: 10px;
