@@ -23,8 +23,8 @@
 
 .footer {
   grid-area: foot;
-  padding-top: 15px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  padding: 15px 10px;
 }
 
 #second-grid-wrapper {
@@ -126,7 +126,9 @@
   transition: 0.2s ease-in;
   background-color: #666666;
   grid-area: tile-one;
-  padding-inline: 5px;
+  padding-inline: 15px;
+  gap: 1.5em;
+  text-align: justify;
 }
 #third-grid-wrapper .tile-two-column {
   margin: 5px;
@@ -189,17 +191,6 @@
   }
   #second-grid-wrapper .tile-one-column {
     padding-block: 30px;
-  }
-}
-@media screen and (max-width: 450px) {
-  #second-grid-wrapper {
-    width: 85vw;
-  }
-  #third-grid-wrapper {
-    width: 85vw;
-  }
-  #third-grid-wrapper .tile-two-column {
-    width: 14.8vw;
   }
 }
 *,

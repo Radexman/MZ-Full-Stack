@@ -13,7 +13,9 @@
         @include tile-small;
         @include tile-two;
         grid-area: tile-one;
-        padding-inline: 5px;
+        padding-inline: 15px;
+        gap: 1.5em;
+        text-align: justify;
     }
 
     .tile-two-column {
