@@ -33,3 +33,28 @@
 @mixin tile-four {
     background-color: #ee5232;
 }
+
+@mixin tile-large {
+    background-color: #ee5232;
+}
+
+// Social media tiles
+
+@mixin tile-yt {
+    background-color: #d94349;
+}
+@mixin tile-fb {
+    background-color: #4668b3;
+}
+@mixin tile-gplus {
+    background-color: #d95333;
+}
+@mixin tile-tw {
+    background-color: #3095d3;
+}
+
+// Icons
+
+@mixin icon {
+    font-size: 2.5rem;
+}

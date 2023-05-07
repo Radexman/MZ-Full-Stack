@@ -1,4 +1,4 @@
-// Display Current hour in user interface
+// Display Current hour and year in user interface
 
 let timerEl = document.querySelector('.nav__timer');
 
@@ -19,6 +19,13 @@ const getTime = () => {
 	return fullTime;
 };
 
+const getFullYear = () => {
+	const date = new Date();
+	const currentYear = date.getFullYear();
+
+	return currentYear;
+};
+
 const displayTime = () => {
 	timerEl.textContent = getTime();
 
@@ -28,3 +35,4 @@ const displayTime = () => {
 };
 
 document.addEventListener('DOMContentLoaded', displayTime);
+document.querySelector('#current-year').textContent = getFullYear();
