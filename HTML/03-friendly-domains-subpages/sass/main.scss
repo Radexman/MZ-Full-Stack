@@ -51,6 +51,20 @@ select {
     @include icon;
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-link {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    gap: .3em;
+}
+
 // Page layout
 
 #first-grid-wrapper {
