@@ -21,21 +21,43 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
+        transition: .2s ease-in;
     }
 
     .tile-two-column:nth-child(2) {
         @include tile-yt;
+
+        &:hover {
+            background-color: #c83237;
+        }
     }
 
     .tile-two-column:nth-child(3) {
         @include tile-fb;
+
+        &:hover {
+            background-color: #3557a2;
+        }
     }
 
     .tile-two-column:nth-child(4) {
         @include tile-gplus;
+
+        &:hover {
+            background-color: #c84222;
+        }
     }
 
     .tile-two-column:nth-child(5) {
         @include tile-tw;
+
+        &:hover {
+            background-color: #2084c2;
+        }
+    }
+
+    .fa-youtube {
+        font-size: 2.1rem;
     }
 }

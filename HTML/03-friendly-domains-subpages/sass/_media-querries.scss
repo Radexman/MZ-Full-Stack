@@ -12,6 +12,20 @@
                 padding-bottom: 7px;
             }
     }
+
+    .tile-one-column {
+        padding: 10px;
+    }
+
+    .tile-two-column {
+        padding-block: 15px;
+    }
+
+    #second-grid-wrapper {
+        .tile-one-column {
+            padding-block: 30px;
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {

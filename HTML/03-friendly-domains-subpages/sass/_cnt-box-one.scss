@@ -9,22 +9,38 @@
         "tile-five tile-five"
     ;
 
+    .tile-one-column {
+        cursor: pointer;
+    }
+
     .tile-one-column:nth-child(1) {
         @include tile-one;
         @include tile-small;
         grid-area: tile-one;
+
+        &:hover {
+            background-color: #2084c2;
+        }
     }
 
     .tile-one-column:nth-child(2) {
         @include tile-one;
         @include tile-small;
         grid-area: tile-two;
+
+        &:hover {
+            background-color: #2084c2;
+        }
     }
 
     .tile-one-column:nth-child(3) {
         @include tile-small;
         @include tile-two;
         grid-area: tile-three;
+
+        &:hover {
+            background-color: #555555;
+        }
         
     }
     
@@ -32,6 +48,10 @@
         @include tile-small;
         @include tile-three;
         grid-area: tile-four;
+
+        &:hover {
+            background-color: #92b63f;
+        }
     }
 
     .tile-two-column:nth-child(5) {

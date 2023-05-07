@@ -19,6 +19,7 @@
     justify-content: center;
     font-size: 1.1rem;
     gap: .3em;
+    transition: .2s ease-in;
 }
 
 @mixin tile-one {
